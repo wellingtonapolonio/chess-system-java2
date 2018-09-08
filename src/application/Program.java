@@ -3,7 +3,7 @@ package application;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import chess.ChessExpeption;
+import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
@@ -30,7 +30,7 @@ public class Program {
 				ChessPiece capturedPiece = chessMatch.performChessMovie(source, target);
 			
 			}
-			catch (ChessExpeption e) {
+			catch (ChessException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 				
